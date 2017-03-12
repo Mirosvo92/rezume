@@ -1,0 +1,351 @@
+@import url(reset.css);
+/* line 2, sass/main.sass */
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 8, sass/main.sass */
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+/* line 19, sass/main.sass */
+.loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 70px;
+  width: 70px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute; }
+
+/* line 32, sass/main.sass */
+.about_prog {
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  background: url(../img/bg_a_r.png);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  /* line 38, sass/main.sass */
+  .about_prog .wrap_about_prog {
+    max-width: 1170px;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    text-align: center; }
+    /* line 48, sass/main.sass */
+    .about_prog .wrap_about_prog .text_pr {
+      font-family: albertus, ice;
+      font-size: 50px;
+      padding: 15px;
+      color: #eaeaea; }
+    /* line 53, sass/main.sass */
+    .about_prog .wrap_about_prog .text_pr2 {
+      font-family: albertus, ice;
+      font-size: 50px;
+      padding: 15px;
+      color: #eaeaea; }
+    /* line 58, sass/main.sass */
+    .about_prog .wrap_about_prog .wrap_but {
+      width: 70px;
+      height: 70px; }
+      /* line 62, sass/main.sass */
+      .about_prog .wrap_about_prog .wrap_but .next_but img {
+        -webkit-transform: rotateZ(90deg);
+                transform: rotateZ(90deg);
+        width: 50%;
+        -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease; }
+        /* line 66, sass/main.sass */
+        .about_prog .wrap_about_prog .wrap_but .next_but img:hover {
+          width: 70%;
+          -webkit-transform: rotateZ(0deg);
+                  transform: rotateZ(0deg);
+          -webkit-transition: all 0.5s ease;
+                  transition: all 0.5s ease; }
+
+/* line 70, sass/main.sass */
+.data_use {
+  width: 100%;
+  position: absolute;
+  z-index: 900;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../img/bg_d_u.png);
+  display: flex; }
+  /* line 77, sass/main.sass */
+  .data_use .wrap_data_use {
+    max-width: 1170px;
+    width: 100%;
+    height: 85%;
+    margin: 3% auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    text-align: center; }
+    /* line 87, sass/main.sass */
+    .data_use .wrap_data_use .photo_use {
+      border-bottom: 2px solid #81889D;
+      padding: 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      /* line 93, sass/main.sass */
+      .data_use .wrap_data_use .photo_use h3 {
+        padding: 10px;
+        font-family: albertus, ice;
+        font-size: 50px;
+        padding: 15px;
+        color: #81889D;
+        font-weight: 900; }
+      /* line 101, sass/main.sass */
+      .data_use .wrap_data_use .photo_use .uploadbutton .button {
+        width: 100px;
+        height: 20px;
+        background: #81889D;
+        color: #eaeaea;
+        border: 1px solid black;
+        cursor: pointer;
+        padding: 5px 5px 3px 5px;
+        text-align: center;
+        border-radius: 5px; }
+        /* line 111, sass/main.sass */
+        .data_use .wrap_data_use .photo_use .uploadbutton .button:hover {
+          background: #eaeaea;
+          color: #81889D;
+          -webkit-transition: all 0.5s ease;
+                  transition: all 0.5s ease; }
+        /* line 115, sass/main.sass */
+        .data_use .wrap_data_use .photo_use .uploadbutton .button:active {
+          color: red; }
+      /* line 117, sass/main.sass */
+      .data_use .wrap_data_use .photo_use .uploadbutton .but_add {
+        display: none; }
+    /* line 119, sass/main.sass */
+    .data_use .wrap_data_use p {
+      font-family: albertus, ice;
+      font-size: 15px;
+      padding: 15px;
+      color: #81889D; }
+    /* line 124, sass/main.sass */
+    .data_use .wrap_data_use .wrap_but_data {
+      width: 70px;
+      height: 70px; }
+      /* line 128, sass/main.sass */
+      .data_use .wrap_data_use .wrap_but_data .next_but_data img {
+        -webkit-transform: rotateZ(90deg);
+                transform: rotateZ(90deg);
+        width: 50%;
+        -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease; }
+        /* line 132, sass/main.sass */
+        .data_use .wrap_data_use .wrap_but_data .next_but_data img:hover {
+          width: 70%;
+          -webkit-transform: rotateZ(0deg);
+                  transform: rotateZ(0deg);
+          -webkit-transition: all 0.5s ease;
+                  transition: all 0.5s ease; }
+
+/* line 136, sass/main.sass */
+.form_use {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 45%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  /* line 142, sass/main.sass */
+  .form_use h3 {
+    font-size: 40px;
+    padding: 15px;
+    color: #81889D;
+    font-family: albertus, ice; }
+  /* line 147, sass/main.sass */
+  .form_use .nick_name {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background: url(../img/bg_d_u.png);
+    border-bottom: 2px solid #81889D;
+    outline: none;
+    width: 65%;
+    text-transform: capitalize; }
+    /* line 156, sass/main.sass */
+    .form_use .nick_name:focus {
+      border-bottom: 2px solid red;
+      -webkit-transition: all 0.5s ease;
+              transition: all 0.5s ease; }
+  /* line 159, sass/main.sass */
+  .form_use .surname_name {
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #81889D;
+    border-top: none;
+    background: url(../img/bg_d_u.png);
+    outline: none;
+    width: 65%;
+    text-transform: capitalize; }
+    /* line 168, sass/main.sass */
+    .form_use .surname_name:focus {
+      border-bottom: 2px solid red;
+      -webkit-transition: all 0.5s ease;
+              transition: all 0.5s ease; }
+  /* line 171, sass/main.sass */
+  .form_use p {
+    font-size: 30px;
+    padding: 15px;
+    color: #81889D;
+    font-family: albertus, ice; }
+  /* line 176, sass/main.sass */
+  .form_use .dataComments {
+    width: 65%;
+    height: 20%;
+    resize: none;
+    outline: none; }
+
+/* line 181, sass/main.sass */
+::-moz-placeholder {
+  color: #00C6D2;
+  opacity: 1;
+  font-size: 13px;
+  font-family: ice; }
+
+/* line 186, sass/main.sass */
+::-webkit-input-placeholder {
+  color: #00C6D2;
+  font-size: 13px;
+  font-family: ice; }
+
+/* line 191, sass/main.sass */
+.main_menu {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 800;
+  background: url(../img/bg_a_r.png);
+  display: flex; }
+  /* line 198, sass/main.sass */
+  .main_menu .wrap_main_menu {
+    max-width: 1170px;
+    width: 100%;
+    min-height: 70%;
+    margin: 3% auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url(../img/bg_d_u.png); }
+    /* line 207, sass/main.sass */
+    .main_menu .wrap_main_menu .main_photo {
+      width: 20%;
+      height: 35%;
+      padding: 25px; }
+      /* line 211, sass/main.sass */
+      .main_menu .wrap_main_menu .main_photo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px; }
+    /* line 215, sass/main.sass */
+    .main_menu .wrap_main_menu .main_surname {
+      font-size: 30px;
+      padding: 15px;
+      color: #81889D;
+      font-family: albertus, ice; }
+    /* line 220, sass/main.sass */
+    .main_menu .wrap_main_menu .main_name {
+      font-size: 30px;
+      padding: 15px;
+      color: #81889D;
+      font-family: albertus, ice; }
+    /* line 225, sass/main.sass */
+    .main_menu .wrap_main_menu .main_dataComments {
+      font-size: 30px;
+      padding: 15px;
+      color: #81889D;
+      font-family: albertus, ice; }
+
+/*# sourceMappingURL=main.css.map */

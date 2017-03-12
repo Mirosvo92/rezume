@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<title>resume</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+	</head>
+	<body>
+	<div class="loader">
+			<div class="loader_inner"></div>
+	</div>
+		<!--about_prog-->
+		<div class="about_prog">
+			<div class="wrap_about_prog">
+				<p class = "text_pr">This application was created to help you create a resume</p>
+				<p class = "text_pr2">Please click the button and fill in the data</p>
+				<div class="wrap_but"><a class= "next_but" href="#"><img src="img/next.png" alt="img"></a></div>
+			</div>
+		</div>
+		<!--data from user-->
+		<div class="data_use">
+			<div class="wrap_data_use">
+				<div class="photo_use">
+					<h3>Please upload a photo</h3>
+					<label class="uploadbutton">
+  						<span class="button">Upload</span>
+						<input class="but_add" type="file"/>
+					</label>
+				</div>
+				<form class = "form_use">
+					<h3>Please tell about yourself</h3>
+					<input placeholder="Write your name here..." type="text" class="nick_name">
+					<input placeholder="Write your surname here..." type="text" class="surname_name">
+					<textarea name="comment_use" placeholder="about yourself" class="dataComments"></textarea>
+				</form>
+				<p>Click on the button to see the result</p>
+				<div class="wrap_but_data"><a class= "next_but_data" href="#"><img src="img/next.png" alt="img"></a></div>
+			</div>
+		</div>
+		<!--main menu-->
+		<div class="main_menu">
+			<div class="wrap_main_menu">
+				<div class="main_photo">	
+				</div>
+				<p class="main_surname"></p>
+				<p class="main_name"></p>
+				<p class="main_dataComments"></p>
+			</div>
+		</div>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

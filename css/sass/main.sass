@@ -1,0 +1,229 @@
+@import url(reset.css)
+body
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	
+.loader 
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+.loader_inner
+	background-image: url("../img/preloader.gif")
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+	height: 70px
+	width: 70px
+	margin-top: -30px
+	margin-left: -30px
+	left: 50%
+	top: 50%
+	position: absolute
+
+.about_prog
+	width: 100%
+	position: absolute
+	z-index: 1000
+	background: url(../img/bg_a_r.png)
+	display: flex
+	.wrap_about_prog
+		max-width: 1170px
+		width: 100%
+		height: 50%
+		margin: auto
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-around
+		text-align: center
+		.text_pr
+			font-family: albertus , ice
+			font-size: 50px
+			padding: 15px
+			color: #eaeaea
+		.text_pr2
+			font-family: albertus , ice
+			font-size: 50px
+			padding: 15px
+			color: #eaeaea
+		.wrap_but
+			width: 70px
+			height: 70px
+			.next_but
+				img
+					transform: rotateZ(90deg)
+					width: 50%
+					transition: all 0.5s ease
+					&:hover
+						width: 70%
+						transform: rotateZ(0deg)
+						transition: all 0.5s ease
+.data_use
+	width: 100%
+	position: absolute
+	z-index: 900
+	display: flex
+	background: url(../img/bg_d_u.png)
+	display: flex
+	.wrap_data_use
+		max-width: 1170px
+		width: 100%
+		height: 85%
+		margin: 3% auto
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-around
+		text-align: center
+		.photo_use
+			border-bottom: 2px solid #81889D
+			padding: 10px
+			display: flex
+			flex-direction: column
+			align-items: center
+			h3
+				padding: 10px
+				font-family: albertus , ice
+				font-size: 50px
+				padding: 15px
+				color: #81889D
+				font-weight: 900
+			.uploadbutton
+				.button
+					width: 100px
+					height: 20px
+					background: #81889D
+					color: #eaeaea
+					border: 1px  solid black
+					cursor: pointer
+					padding: 5px 5px 3px 5px
+					text-align: center
+					border-radius: 5px
+					&:hover
+						background: #eaeaea
+						color: #81889D
+						transition: all 0.5s ease
+					&:active
+						color: red
+				.but_add
+					display: none
+		p
+			font-family: albertus , ice
+			font-size: 15px
+			padding: 15px
+			color: #81889D
+		.wrap_but_data
+			width: 70px
+			height: 70px
+			.next_but_data
+				img
+					transform: rotateZ(90deg)
+					width: 50%
+					transition: all 0.5s ease
+					&:hover
+						width: 70%
+						transform: rotateZ(0deg)
+						transition: all 0.5s ease
+.form_use
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 45%
+	align-items: center
+	h3
+		font-size: 40px
+		padding: 15px
+		color: #81889D
+		font-family: albertus , ice
+	.nick_name
+		border-left: none
+		border-right: none
+		border-top: none
+		background: url(../img/bg_d_u.png)
+		border-bottom: 2px solid #81889D
+		outline: none
+		width: 65%
+		text-transform: capitalize
+		&:focus
+			border-bottom: 2px solid red
+			transition: all 0.5s ease
+	.surname_name
+		border-left: none
+		border-right: none
+		border-bottom: 2px solid #81889D
+		border-top: none
+		background: url(../img/bg_d_u.png)
+		outline: none
+		width: 65%
+		text-transform: capitalize
+		&:focus
+			border-bottom: 2px solid red
+			transition: all 0.5s ease
+	p
+		font-size: 30px
+		padding: 15px
+		color: #81889D
+		font-family: albertus , ice
+	.dataComments
+		width: 65%
+		height: 20%
+		resize: none
+		outline: none
+::-moz-placeholder 
+	color: #00C6D2
+	opacity: 1
+	font-size: 13px
+	font-family: ice
+::-webkit-input-placeholder
+	color: #00C6D2
+	font-size: 13px
+	font-family: ice
+//main_menu
+.main_menu
+	width: 100%
+	position: relative
+	display: flex
+	z-index: 800
+	background: url(../img/bg_a_r.png)
+	display: flex
+	.wrap_main_menu
+		max-width: 1170px
+		width: 100%
+		min-height: 70%
+		margin: 3% auto
+		display: flex
+		flex-direction: column
+		align-items: center
+		background: url(../img/bg_d_u.png)
+		.main_photo
+			width: 20%
+			height: 35%
+			padding: 25px
+			img
+				width: 100%
+				height: 100%
+				border-radius: 5px
+		.main_surname
+			font-size: 30px
+			padding: 15px
+			color: #81889D
+			font-family: albertus , ice
+		.main_name
+			font-size: 30px
+			padding: 15px
+			color: #81889D
+			font-family: albertus , ice
+		.main_dataComments
+			font-size: 30px
+			padding: 15px
+			color: #81889D
+			font-family: albertus , ice
